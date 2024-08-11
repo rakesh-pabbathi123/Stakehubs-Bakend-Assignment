@@ -1,0 +1,69 @@
+### I. Create Orders
+
+### Create Buyer and Seller Orders:
+
+###1.POST Create Order (Matching Orders)
+POST http://localhost:3000/create-order
+Content-Type: application/json
+
+{
+  "buyer_qty": 20,
+  "buyer_price": 100,
+  "seller_qty": 20,
+  "seller_price": 100
+}
+
+### 2.POST Create Order (Non-Matching Buyer)
+POST http://localhost:3000/create-order
+Content-Type: application/json
+
+{
+  "buyer_qty": 100,
+  "buyer_price": 10.50,
+  "seller_qty": 0,
+  "seller_price": 0.00
+}
+
+###3.POST Create Order (Non-Matching Seller)
+POST http://localhost:3000/create-order
+Content-Type: application/json
+
+{
+  "buyer_qty": 0,
+  "buyer_price": 0.00,
+  "seller_qty": 50,
+  "seller_price": 10.00
+}
+
+### POST Create Order (Matching Orders)
+POST http://localhost:3000/create-order
+Content-Type: application/json
+
+{
+  "buyer_qty": 150,
+  "buyer_price": 11.00,
+  "seller_qty": 100,
+  "seller_price": 11.00
+}
+
+### 5.POST Create Order (Partially Matching Order)
+POST http://localhost:3000/create-order
+Content-Type: application/json
+
+{
+  "buyer_qty": 5,
+  "buyer_price": 150.00,
+  "seller_qty": 10,
+  "seller_price": 145.00
+}
+
+
+### II.Match Orders
+
+POST http://localhost:3000/match-orders/
+
+### III. Get Orders
+
+GET http://localhost:3000/get-orders/
+
+

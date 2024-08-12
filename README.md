@@ -1,5 +1,26 @@
 ## **created by:Rakesh Pabbathi**
+## Deployment links
 
+###  Order Creation: POST /create-order - Create new orders
+- Endpoint: `https://stakehubs-bakend-assignment.onrender.com/create-order`
+    - Request Body:
+    ```json
+    {
+      "buyer_qty": 10,
+      "buyer_price": 100.5,
+      "seller_qty": 8,
+      "seller_price": 105.0
+    }
+    ```
+- 
+
+### Order Matching: POST /match-orders - Process and match pending orders
+- Endpoint: `https://stakehubs-bakend-assignment.onrender.com/match-orders`
+
+### Order Fetch: GET /get-orders - Retrieve current orders from pending and completed tables
+- Endpoint: `https://stakehubs-bakend-assignment.onrender.com/get-orders`
+
+  
 ## **Stakehubs Assignment**
 
 # Order Matching System - Backend
